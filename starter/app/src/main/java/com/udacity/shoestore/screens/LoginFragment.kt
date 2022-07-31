@@ -30,12 +30,15 @@ class LoginFragment : Fragment(){
         )
 
         binding.logInButton.setOnClickListener { navigateToWelcomeScreen() }
+        binding.signUpButton.setOnClickListener { navigateToWelcomeScreen() }
 
         return binding.root
 
     }
 
     private fun navigateToWelcomeScreen(){
-        //findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToWelcomeFragment())
+        findNavController().navigate(
+            LoginFragmentDirections.actionLoginFragmentToWelcomeFragment()
+        )
     }
 }

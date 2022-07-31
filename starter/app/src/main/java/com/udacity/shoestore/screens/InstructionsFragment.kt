@@ -8,11 +8,11 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.udacity.shoestore.R
-import com.udacity.shoestore.databinding.WelcomeFragmentBinding
+import com.udacity.shoestore.databinding.InstructionsFragmentBinding
 
-class WelcomeFragment : Fragment(){
+class InstructionsFragment : Fragment() {
 
-    private lateinit var binding: WelcomeFragmentBinding
+    private lateinit var binding: InstructionsFragmentBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -22,12 +22,12 @@ class WelcomeFragment : Fragment(){
 
         binding = DataBindingUtil.inflate(
             inflater,
-            R.layout.welcome_fragment,
+            R.layout.instructions_fragment,
             container,
             false
         )
 
-        binding.instructionsButton.setOnClickListener { navigateToInstructionsScreen() }
+        binding.startButton.setOnClickListener { navigateToInstructionsScreen() }
 
         return binding.root
 
@@ -35,7 +35,7 @@ class WelcomeFragment : Fragment(){
 
     private fun navigateToInstructionsScreen(){
         findNavController().navigate(
-            WelcomeFragmentDirections.actionWelcomeFragmentToInstructionsFragment()
+            InstructionsFragmentDirections.actionInstructionsFragmentToShoeFragment()
         )
     }
 }
