@@ -1,4 +1,4 @@
-package com.udacity.shoestore.screens.shoes
+package com.udacity.petshop.screens.cats
 
 import androidx.fragment.app.Fragment
 import android.os.Bundle
@@ -7,14 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
-import com.udacity.shoestore.R
-import com.udacity.shoestore.databinding.ShoeFragmentBinding
+import petshop.R
+import petshop.databinding.CatFragmentBinding
 
-class ShoeFragment : Fragment(){
+class CatFragment : Fragment(){
 
-    private lateinit var viewModel: ShoeViewModel
+    private lateinit var viewModel: CatViewModel
 
-    private lateinit var binding: ShoeFragmentBinding
+    private lateinit var binding: CatFragmentBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -25,14 +25,14 @@ class ShoeFragment : Fragment(){
         // Inflate view and obtain an instance of the binding class
         binding = DataBindingUtil.inflate(
             inflater,
-            R.layout.shoe_fragment,
+            R.layout.cat_fragment,
             container,
             false
         )
 
         // Set up view model
-        viewModel = ViewModelProvider(this).get(ShoeViewModel::class.java)
-        binding.shoeViewModel = viewModel
+        viewModel = ViewModelProvider(this).get(CatViewModel::class.java)
+        binding.catViewModel = viewModel
 
         return binding.root
 

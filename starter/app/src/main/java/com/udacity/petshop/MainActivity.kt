@@ -1,10 +1,11 @@
-package com.udacity.shoestore
+package com.udacity.petshop
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
-import com.udacity.shoestore.databinding.ActivityMainBinding
+import petshop.R
+import petshop.databinding.ActivityMainBinding
 import timber.log.Timber
 
 class MainActivity : AppCompatActivity() {

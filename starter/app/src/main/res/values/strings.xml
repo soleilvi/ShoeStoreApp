@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ShoeStore</string>
+    <string name="app_name">PetShop</string>
     <string name="login">Log In</string>
     <string name="signup">Sign Up</string>
     <string name="email">E-mail</string>

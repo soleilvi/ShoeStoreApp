@@ -3,10 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/navigation.xml"
     app:startDestination="@id/loginFragment">
-
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.udacity.shoestore.screens.LoginFragment"
+        android:name="com.udacity.petshop.screens.LoginFragment"
         android:label="LoginFragment" >
         <action
             android:id="@+id/action_loginFragment_to_welcomeFragment"
@@ -14,7 +13,7 @@
     </fragment>
     <fragment
         android:id="@+id/welcomeFragment"
-        android:name="com.udacity.shoestore.screens.WelcomeFragment"
+        android:name="com.udacity.petshop.screens.WelcomeFragment"
         android:label="WelcomeFragment" >
         <action
             android:id="@+id/action_welcomeFragment_to_instructionsFragment"
@@ -22,14 +21,14 @@
     </fragment>
     <fragment
         android:id="@+id/instructionsFragment"
-        android:name="com.udacity.shoestore.screens.InstructionsFragment"
+        android:name="com.udacity.petshop.screens.InstructionsFragment"
         android:label="InstructionsFragment" >
         <action
-            android:id="@+id/action_instructionsFragment_to_shoeFragment"
-            app:destination="@id/shoeFragment" />
+            android:id="@+id/action_instructionsFragment_to_catFragment"
+            app:destination="@id/catFragment" />
     </fragment>
     <fragment
-        android:id="@+id/shoeFragment"
-        android:name="com.udacity.shoestore.screens.shoes.ShoeFragment"
-        android:label="ShoeFragment" />
+        android:id="@+id/catFragment"
+        android:name="com.udacity.petshop.screens.cats.CatFragment"
+        android:label="CatFragment" />
 </navigation>
