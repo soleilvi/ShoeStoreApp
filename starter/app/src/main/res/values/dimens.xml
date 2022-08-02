@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="input_text_width">450dp</dimen>
+    <dimen name="cat_breed_text_size">24sp</dimen>
+    <dimen name="line_width">1dp</dimen>
+    <dimen name="cat_breed_margin">5dp</dimen>
 </resources>

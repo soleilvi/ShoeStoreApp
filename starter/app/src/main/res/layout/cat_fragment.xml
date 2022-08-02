@@ -6,6 +6,9 @@
 
     <data>
         <variable
+            name="catFragment"
+            type="com.udacity.petshop.screens.cats.CatFragment" />
+        <variable
             name="catViewModel"
             type="com.udacity.petshop.screens.cats.CatViewModel" />
     </data>
@@ -32,26 +35,143 @@
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="-139dp">
 
-            <TableLayout
+            <LinearLayout
+                android:id="@+id/catLinearLayout"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-                <TableRow
+                <TextView
+                    android:id="@+id/catText0"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/cat_breed_margin"
+                    android:layout_marginBottom="@dimen/cat_breed_margin"
+                    android:text="@{catViewModel.cats.get(0).breed}"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/cat_breed_text_size"
+                    android:onClick="@{() -> catViewModel.onClickBreed(0)}"/>
 
-                <TableRow
+                <View
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+                    android:layout_height="@dimen/line_width"
+                    android:background="@color/lineColor" />
 
-                <TableRow
+                <TextView
+                    android:id="@+id/catText1"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/cat_breed_margin"
+                    android:layout_marginBottom="@dimen/cat_breed_margin"
+                    android:text="@{catViewModel.cats.get(1).breed}"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/cat_breed_text_size"
+                    android:onClick="@{() -> catViewModel.onClickBreed(1)}" />
 
-                <TableRow
+                <View
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-            </TableLayout>
+                    android:layout_height="@dimen/line_width"
+                    android:background="@color/lineColor" />
+
+                <TextView
+                    android:id="@+id/catText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/cat_breed_margin"
+                    android:layout_marginBottom="@dimen/cat_breed_margin"
+                    android:text="@{catViewModel.cats.get(2).breed}"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/cat_breed_text_size"
+                    android:onClick="@{() -> catViewModel.onClickBreed(2)}" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_width"
+                    android:background="@color/lineColor" />
+
+                <TextView
+                    android:id="@+id/catText3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/cat_breed_margin"
+                    android:layout_marginBottom="@dimen/cat_breed_margin"
+                    android:text="@{catViewModel.cats.get(3).breed}"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/cat_breed_text_size"
+                    android:onClick="@{() -> catViewModel.onClickBreed(3)}" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_width"
+                    android:background="@color/lineColor" />
+
+                <TextView
+                    android:id="@+id/catText4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/cat_breed_margin"
+                    android:layout_marginBottom="@dimen/cat_breed_margin"
+                    android:text="@{catViewModel.cats.get(4).breed}"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/cat_breed_text_size"
+                    android:onClick="@{() -> catViewModel.onClickBreed(4)}" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_width"
+                    android:background="@color/lineColor" />
+
+                <TextView
+                    android:id="@+id/catText5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/cat_breed_margin"
+                    android:layout_marginBottom="@dimen/cat_breed_margin"
+                    android:text="@{catViewModel.cats.get(5).breed}"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/cat_breed_text_size"
+                    android:onClick="@{() -> catViewModel.onClickBreed(5)}" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_width"
+                    android:background="@color/lineColor" />
+
+                <TextView
+                    android:id="@+id/catText6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/cat_breed_margin"
+                    android:layout_marginBottom="@dimen/cat_breed_margin"
+                    android:text="@{catViewModel.cats.get(6).breed}"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/cat_breed_text_size"
+                    android:onClick="@{() -> catViewModel.onClickBreed(6)}" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_width"
+                    android:background="@color/lineColor" />
+
+                <TextView
+                    android:id="@+id/catText7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/cat_breed_margin"
+                    android:layout_marginBottom="@dimen/cat_breed_margin"
+                    android:text="@{catViewModel.cats.get(7).breed}"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/cat_breed_text_size"
+                    android:onClick="@{() -> catViewModel.onClickBreed(7)}" />
+            </LinearLayout>
         </ScrollView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
