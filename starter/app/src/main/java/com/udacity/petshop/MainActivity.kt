@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Set up Action Bar
+        // Set up Action Bar. I copied this method from Android Studio's "Basic Activity."
         setSupportActionBar(binding.toolbar)
         val navController = this.findNavController(R.id.myNavHostFragment)
         appBarConfiguration = AppBarConfiguration(navController.graph)
